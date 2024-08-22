@@ -10,7 +10,7 @@ class Item(BaseModel):
 
 ## Redis Connection
 
-my_dict = {}
+
 r = redis.Redis(host='redis', port=6379, db=0, decode_responses=True)
 
 @app.get("/")
